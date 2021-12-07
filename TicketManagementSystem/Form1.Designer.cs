@@ -29,12 +29,12 @@ namespace TicketManagementSystem
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox_price_child_weekend = new System.Windows.Forms.TextBox();
+            this.textBox_price_adult_weekend = new System.Windows.Forms.TextBox();
+            this.textBox_price_adult_holiday = new System.Windows.Forms.TextBox();
+            this.textBox_price_aged_holiday = new System.Windows.Forms.TextBox();
+            this.textBox_price_aged_weekend = new System.Windows.Forms.TextBox();
+            this.textBox_price_child_holiday = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -43,179 +43,226 @@ namespace TicketManagementSystem
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.comboBox_group = new System.Windows.Forms.ComboBox();
+            this.comboBox_hours = new System.Windows.Forms.ComboBox();
+            this.button_submit = new System.Windows.Forms.Button();
+            this.button_clear = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.navigateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addVisitorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox2
+            // textBox_price_child_weekend
             // 
-            this.textBox2.Location = new System.Drawing.Point(226, 230);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
-            this.textBox2.TabIndex = 1;
+            this.textBox_price_child_weekend.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_price_child_weekend.Location = new System.Drawing.Point(167, 276);
+            this.textBox_price_child_weekend.Name = "textBox_price_child_weekend";
+            this.textBox_price_child_weekend.Size = new System.Drawing.Size(100, 25);
+            this.textBox_price_child_weekend.TabIndex = 1;
             // 
-            // textBox3
+            // textBox_price_adult_weekend
             // 
-            this.textBox3.Location = new System.Drawing.Point(226, 295);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 22);
-            this.textBox3.TabIndex = 2;
+            this.textBox_price_adult_weekend.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_price_adult_weekend.Location = new System.Drawing.Point(167, 341);
+            this.textBox_price_adult_weekend.Name = "textBox_price_adult_weekend";
+            this.textBox_price_adult_weekend.Size = new System.Drawing.Size(100, 25);
+            this.textBox_price_adult_weekend.TabIndex = 2;
             // 
-            // textBox4
+            // textBox_price_adult_holiday
             // 
-            this.textBox4.Location = new System.Drawing.Point(398, 295);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 22);
-            this.textBox4.TabIndex = 3;
+            this.textBox_price_adult_holiday.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_price_adult_holiday.Location = new System.Drawing.Point(339, 341);
+            this.textBox_price_adult_holiday.Name = "textBox_price_adult_holiday";
+            this.textBox_price_adult_holiday.Size = new System.Drawing.Size(100, 25);
+            this.textBox_price_adult_holiday.TabIndex = 3;
             // 
-            // textBox5
+            // textBox_price_aged_holiday
             // 
-            this.textBox5.Location = new System.Drawing.Point(398, 364);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 22);
-            this.textBox5.TabIndex = 4;
+            this.textBox_price_aged_holiday.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_price_aged_holiday.Location = new System.Drawing.Point(339, 410);
+            this.textBox_price_aged_holiday.Name = "textBox_price_aged_holiday";
+            this.textBox_price_aged_holiday.Size = new System.Drawing.Size(100, 25);
+            this.textBox_price_aged_holiday.TabIndex = 4;
             // 
-            // textBox6
+            // textBox_price_aged_weekend
             // 
-            this.textBox6.Location = new System.Drawing.Point(226, 364);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 22);
-            this.textBox6.TabIndex = 5;
+            this.textBox_price_aged_weekend.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_price_aged_weekend.Location = new System.Drawing.Point(167, 410);
+            this.textBox_price_aged_weekend.Name = "textBox_price_aged_weekend";
+            this.textBox_price_aged_weekend.Size = new System.Drawing.Size(100, 25);
+            this.textBox_price_aged_weekend.TabIndex = 5;
             // 
-            // textBox9
+            // textBox_price_child_holiday
             // 
-            this.textBox9.Location = new System.Drawing.Point(398, 230);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 22);
-            this.textBox9.TabIndex = 8;
+            this.textBox_price_child_holiday.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_price_child_holiday.Location = new System.Drawing.Point(339, 276);
+            this.textBox_price_child_holiday.Name = "textBox_price_child_holiday";
+            this.textBox_price_child_holiday.Size = new System.Drawing.Size(100, 25);
+            this.textBox_price_child_holiday.TabIndex = 8;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(127, 84);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(68, 130);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 17);
+            this.label1.Size = new System.Drawing.Size(73, 19);
             this.label1.TabIndex = 9;
             this.label1.Text = "Group No.";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(395, 19);
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(392, 64);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 17);
+            this.label2.Size = new System.Drawing.Size(102, 23);
             this.label2.TabIndex = 10;
             this.label2.Text = "Pricing Rate";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(127, 364);
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(68, 410);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 17);
+            this.label3.Size = new System.Drawing.Size(41, 19);
             this.label3.TabIndex = 11;
             this.label3.Text = "Aged";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(127, 295);
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(68, 341);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(40, 17);
+            this.label4.Size = new System.Drawing.Size(42, 19);
             this.label4.TabIndex = 12;
             this.label4.Text = "Adult";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(127, 233);
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(68, 279);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(39, 17);
+            this.label5.Size = new System.Drawing.Size(40, 19);
             this.label5.TabIndex = 13;
             this.label5.Text = "Child";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(427, 192);
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(355, 238);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(62, 17);
+            this.label6.Size = new System.Drawing.Size(61, 19);
             this.label6.TabIndex = 14;
             this.label6.Text = "Holidays";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(246, 192);
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(187, 238);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(68, 17);
+            this.label7.Size = new System.Drawing.Size(65, 19);
             this.label7.TabIndex = 15;
             this.label7.Text = "Weekend";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(127, 137);
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(68, 183);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(46, 17);
+            this.label8.Size = new System.Drawing.Size(46, 19);
             this.label8.TabIndex = 16;
             this.label8.Text = "Hours";
             // 
-            // comboBox1
+            // comboBox_group
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.comboBox_group.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox_group.FormattingEnabled = true;
+            this.comboBox_group.Items.AddRange(new object[] {
             ">5",
             "5-20",
             "20+"});
-            this.comboBox1.Location = new System.Drawing.Point(226, 84);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
-            this.comboBox1.TabIndex = 17;
+            this.comboBox_group.Location = new System.Drawing.Point(167, 130);
+            this.comboBox_group.Name = "comboBox_group";
+            this.comboBox_group.Size = new System.Drawing.Size(121, 25);
+            this.comboBox_group.TabIndex = 17;
             // 
-            // comboBox2
+            // comboBox_hours
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.comboBox_hours.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox_hours.FormattingEnabled = true;
+            this.comboBox_hours.Items.AddRange(new object[] {
             "1-2",
             "2-8",
             "8+"});
-            this.comboBox2.Location = new System.Drawing.Point(226, 134);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 24);
-            this.comboBox2.TabIndex = 18;
+            this.comboBox_hours.Location = new System.Drawing.Point(167, 180);
+            this.comboBox_hours.Name = "comboBox_hours";
+            this.comboBox_hours.Size = new System.Drawing.Size(121, 25);
+            this.comboBox_hours.TabIndex = 18;
             // 
-            // button1
+            // button_submit
             // 
-            this.button1.Location = new System.Drawing.Point(239, 423);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 19;
-            this.button1.Text = "Submit";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button_submit.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_submit.Location = new System.Drawing.Point(167, 469);
+            this.button_submit.Name = "button_submit";
+            this.button_submit.Size = new System.Drawing.Size(108, 32);
+            this.button_submit.TabIndex = 19;
+            this.button_submit.Text = "Submit";
+            this.button_submit.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // button_clear
             // 
-            this.button2.Location = new System.Drawing.Point(405, 423);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 20;
-            this.button2.Text = "Clear";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button_clear.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_clear.Location = new System.Drawing.Point(336, 469);
+            this.button_clear.Name = "button_clear";
+            this.button_clear.Size = new System.Drawing.Size(103, 32);
+            this.button_clear.TabIndex = 20;
+            this.button_clear.Text = "Clear";
+            this.button_clear.UseVisualStyleBackColor = true;
+            this.button_clear.Click += new System.EventHandler(this.button_clear_Click);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.navigateToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(800, 28);
+            this.menuStrip1.TabIndex = 21;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // navigateToolStripMenuItem
+            // 
+            this.navigateToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addVisitorToolStripMenuItem});
+            this.navigateToolStripMenuItem.Name = "navigateToolStripMenuItem";
+            this.navigateToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
+            this.navigateToolStripMenuItem.Text = "Navigate";
+            // 
+            // addVisitorToolStripMenuItem
+            // 
+            this.addVisitorToolStripMenuItem.Name = "addVisitorToolStripMenuItem";
+            this.addVisitorToolStripMenuItem.Size = new System.Drawing.Size(166, 26);
+            this.addVisitorToolStripMenuItem.Text = "Add Visitor";
+            this.addVisitorToolStripMenuItem.Click += new System.EventHandler(this.addVisitorToolStripMenuItem_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 482);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.ClientSize = new System.Drawing.Size(800, 520);
+            this.Controls.Add(this.button_clear);
+            this.Controls.Add(this.button_submit);
+            this.Controls.Add(this.comboBox_hours);
+            this.Controls.Add(this.comboBox_group);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -224,26 +271,31 @@ namespace TicketManagementSystem
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox_price_child_holiday);
+            this.Controls.Add(this.textBox_price_aged_weekend);
+            this.Controls.Add(this.textBox_price_aged_holiday);
+            this.Controls.Add(this.textBox_price_adult_holiday);
+            this.Controls.Add(this.textBox_price_adult_weekend);
+            this.Controls.Add(this.textBox_price_child_weekend);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Pricing";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox textBox_price_child_weekend;
+        private System.Windows.Forms.TextBox textBox_price_adult_weekend;
+        private System.Windows.Forms.TextBox textBox_price_adult_holiday;
+        private System.Windows.Forms.TextBox textBox_price_aged_holiday;
+        private System.Windows.Forms.TextBox textBox_price_aged_weekend;
+        private System.Windows.Forms.TextBox textBox_price_child_holiday;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -252,10 +304,13 @@ namespace TicketManagementSystem
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ComboBox comboBox_group;
+        private System.Windows.Forms.ComboBox comboBox_hours;
+        private System.Windows.Forms.Button button_submit;
+        private System.Windows.Forms.Button button_clear;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem navigateToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addVisitorToolStripMenuItem;
     }
 }
 

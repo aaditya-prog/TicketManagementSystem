@@ -17,14 +17,32 @@ namespace TicketManagementSystem
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
+     
 
+        private void addVisitorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Visible = true;     
+            Form2 f = new Form2();  
+            f.Visible = true;
+        }
+
+        private void button_clear_Click(object sender, EventArgs e)
+        {
+            
+            textBox_price_adult_holiday.Clear();
+            textBox_price_adult_weekend.Clear();
+            textBox_price_aged_holiday.Clear();
+            textBox_price_aged_weekend.Clear();
+            textBox_price_child_weekend.Clear();
+            textBox_price_child_holiday.Clear();
+
+            comboBox_group.Text = string.Empty;
+            comboBox_hours.Text = string.Empty;
         }
     }
 }
